@@ -1,0 +1,20 @@
+{
+  "name": "week-8-js-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlramirez1234/tastytreats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlramirez1234/tastytreats/issues"
+  },
+  "homepage": "https://github.com/jlramirez1234/tastytreats#readme"
+}

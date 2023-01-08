@@ -1,0 +1,452 @@
+body{
+    margin: inherit;
+}
+header{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--bg)
+}
+
+header span {
+    align-self: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 5vh;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+header .header-list{
+    display: flex;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.header-list li{
+    padding: 10px 10px 10px 10px;
+    align-self: center;
+    font-family:'Inconsolata', monospace;
+}
+
+.header-list a {
+    text-decoration: none;
+    font-size: 23px;
+    color: var(--color-text);
+    border-bottom: 2px solid transparent;
+    font-weight: normal;
+    padding-bottom: 0.125em;
+    transition: border-bottom-color 50ms linear 0s;
+    float:left;
+    margin:0 5px
+}
+
+.header-list a:hover, .header-list a:active{
+    border-bottom-color: #f00;
+}
+
+.white-space{
+    background: var(--bg-panel);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-space .text-wrap{
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    overflow: hidden;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center
+}
+.white-space p{
+    font-size: larger;
+    white-space: nowrap;
+}
+.container{
+    display: flex;
+    background: black;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictures-align{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+.neon-lights{
+    width: 100%;
+    margin: 10px;
+    color: #fff;
+    text-shadow:
+    0 0 0px #fff,
+    0 0 1px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    font-family: 'Pacifico', cursive
+}
+.neon-lights h1{
+    font-size: 33px;
+
+}
+
+.text-container{
+    width: 100%;
+    
+}
+.center-left{
+    width: 445px;
+}
+.center-left h3{
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    color: var(--bg);
+
+}
+.diabetes-button{
+    display: inline-block
+}
+.diabetes-button button{
+    border: none;
+    border-radius: 6px;
+    background-color: var(--bg-panel);
+    height: 50px;
+    width: 110px;
+
+}
+.diabetes-button button p{
+    font-family: 'Inconsolata', monospace;
+}
+.diabetes-button button:hover{
+    border: solid white 3px; 
+}
+.goodies-option, .content-area{
+    margin-top: 30px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 950px;
+    border: orange 1px solid;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+.goodies-option h1, .content-area h1{
+    margin-bottom: 0;
+    margin-top: 15px;
+    color: var(--bg-panel);
+}
+.goodies-option h3, .content-area h3{
+    color: black;
+    margin: 0;
+    height: 125px;
+    width: 290px;
+    font-size: small;
+}
+.category-text{
+    position: relative;
+    top: 50px; 
+}
+.category-text h3{
+    padding-top: 10px;
+}
+.card-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    height: 440px;
+    width: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+    position: relative;
+    flex-direction: column;
+}
+.card-container i{
+    align-self: center;
+}
+.card-container .category-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-container{
+    align-self: center;
+}
+.card-container p{
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fa-heart.red{
+    color: red;
+    position: relative;
+    top: 20px;
+}
+.fa-heart.blue{
+    color: blue;
+    position: relative;
+    top: 20px;
+}
+.fa-regular:hover{
+    cursor: pointer;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+.image-container img{
+    width: 40%;
+    height: 190;
+}
+.goodies-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 80px;
+}
+.goodies-detail p{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.option{
+    padding-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.fa-solid{
+    color: white;
+    padding:20px;
+    z-index: 0;
+}
+.fa-solid:hover{
+    cursor: pointer;
+}
+.bottom-piece{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap
+}
+.text-left, .img-right{
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-piece h1{
+    color: white;
+}
+.bottom-piece p{
+    color: wheat;
+    width: 50%;
+    margin-left: 35px;
+    font-family: 'Inconsolata', monospace;
+}
+.chef{
+    width: 53%;
+    margin: 10px 10px 10px 10px
+}
+.chef img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* Bottom Piece of Webpage */
+.contact{
+    background:var(--bg-panel);
+    display: flex;
+    flex-direction: column;
+    opacity: 75%;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact h1{
+    text-align: center;
+    color: var(--color-headings);
+    font-size: xx-large;
+    margin-bottom: 0.225rem;
+}
+.contact h6{
+    margin-top: 0;
+    text-align: center;
+}
+.contact label{
+    margin-left: 0.5rem;
+    font-size: large;
+    margin-bottom: inherit
+}
+.contact input{
+    border: none;
+    width: 75%;
+    margin-left: 0.5rem;
+    height: 1.25rem;
+    margin-bottom: 1.25rem
+}
+.contact textarea{
+    margin-left :0.5rem;
+    width: 75%;
+    border: none;
+    overflow: hidden
+}
+.contact .contact-submit{
+    align-self: center;
+    margin-top: 2.188rem;
+    margin-bottom: 2.188rem;
+}
+
+.contact .contact-submit button{
+    height: 1.875rem;
+    width: 4.688rem;
+}
+.contact-section{
+    background: var(--bg);
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.contact-container{
+    height:75%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.contact-container h2, .contact-container h4, .contact-container h5, .contact-container h6{
+    font-family: 'Inconsolata', monospace
+}
+.left-contact{
+    width: 50%;
+}
+.left-contact h2{
+    text-align: center;
+}
+.contact-options{
+    display: flex;
+}
+.socials{
+    width: 50%
+}
+.socials div{
+    height:15px;
+    display: flex;
+    flex-direction: row;
+}
+.socials a{
+    text-decoration: none;
+    color: green;
+}
+.socials img{
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.socials h4{
+    margin: 0;
+}
+.socials h5{
+    margin-top: 0;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+.hours{
+     width: 50%
+}
+.hours h6{
+    text-decoration: underline;
+}
+.hours h5, .hours h6{
+    margin: 8px;
+}
+.right-contact{
+    background: var(--bg-panel);
+    border-radius: 5px;
+    width: 50%;
+}
+.right-contact h1, .right-contact h4, .right-contact h3, .careers p{
+    font-family: 'Inconsolata', monospace;
+}
+
+.get-ahold{
+    max-width: 100%;
+    overflow: hidden;
+}
+.get-ahold h1{
+    text-align: center;
+    margin-bottom: 6px;
+}
+.get-ahold h4{
+    text-align: center;
+    margin-top: 5px;
+}
+.form{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form h3{
+    margin-bottom: 3px;
+}
+.form input{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 50%
+}
+.form p{ 
+    font-size: 9px;
+}
+.get-ahold .contact-submit{
+    display: flex;
+    justify-content: center;
+}
+.contact-submit button{
+    border: none;
+    padding: 7px;
+    background: var(--color-headings);
+    border-radius: 5px
+}
+.contact-submit button:hover{
+    border: solid black;
+
+}
+.careers{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 9px;
+}
+

@@ -1,0 +1,8 @@
+:root{
+    --marquee-width: 90vw;
+    --marquee-height: 7vh;
+    --marquee-elms-displayed: 6;
+    --marquee-elm-width: calc(var(--marquee-width) / var(--marquee-elms-displayed));
+    --marquee-duration-animation: cal(var(--marquee-elms * 3s));
+};
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ee0548ff93.js" crossorigin="anonymous"></script>
+    <title>JS Website With API</title>
+</head>
+<body>
+    <section>
+        <header>
+            <span class="logo">tasty<br>treats</span>
+            <ul class="header-list">
+                <!-- <li><a href="##">Home</a></li> -->
+                <li><a href="##" data-open="about">About</a></li>
+                <li><a href="##" data-open="owner">Meet The Owner</a></li>
+                <li><a href="##" data-open="favorites">Favorites</a></li>
+            </ul>
+        </header>
+        <div class="white-space">
+           <div class="text-wrap"><p>Coming this fall - a wide variety of cakes, cupcakes, and pies!<p></div> 
+        </div>
+
+    </section>
+
+    <!-- About pop-up page -->
+    <section class="full-site-about page-sheet" id="about" data-animation="zoomInOut">
+        <header class="about-container">
+                <h3>ABOUT TASTY TREATS</h3>
+                <i class="fas fa-times" data-closed></i>
+        </header>
+        <div class="about-body">
+            <div class="description">
+                <h2>Tasty Treats' Purpose and Idea</h2>
+                <h3>Idea</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Purpose</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="owner-pic">
+               <img src="./assets/tinywow_anh-tran-qPQqZ0y-rJ0-unsplash_4598012.jpg" alt="brick&mortar">
+               <p>Owner, Jazmine Grace, admiring the foundation that she has built.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <!--Owner pop-up page-->
+    <section class="full-site-owner" id="owner" data-animation="zoomInOut">
+        <header class="about-container">
+                <h3>ABOUT THE OWNER</h3>
+                <i class="fas fa-times" data-closed></i>
+        </header>
+        <div class="pic-description">
+            <div class="owner-photo"><img src="./assets/tinywow_ownerpicture_4597997.jpg" alt="owner"></div>
+            
+            <div class="desc-sec">
+            <div class="name"><h1>Jazmine Grace</h1></div>
+            <div class="owner-desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis eleifend quam adipiscing vitae proin sagittis. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas integer eget aliquet. Ridiculus mus mauris vitae ultricies leo integer. In tellus integer feugiat scelerisque varius morbi. Sed elementum tempus egestas sed sed. Tortor consequat id porta nibh venenatis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Turpis cursus in hac habitasse platea. Cursus turpis massa tincidunt dui ut ornare lectus sit. Dolor sit amet consectetur adipiscing elit duis. Posuere ac ut consequat semper viverra nams.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Favorite Pop-up page-->
+    <section class="full-site-favorites" id="favorites" data-animation="zoomInOut">
+        <header class="favorites-container">
+                <h3>FAVORITES</h3>
+                <i class="fas fa-times" data-closed></i>
+        </header>
+        <div class="favorites-card-container">
+            <div class="switch-container">
+                <div class="alphabet-switch">
+                    <button id="leftBtn">A-Z</button>
+                    <button id="rightBtn" >Z-A</button> 
+                </div>
+            </div>
+            <div class="content-area" id="additional">
+                
+            </div> 
+        </div> 
+    </section>
+
+
+    <!--End of Favorites Pop-up Page-->
+
+    <!--main treat options-->
+    <section class="container">
+     <div class="pictures-align">
+        <!--Top Piece of goodies-->
+         <div class="text-container">
+            <div class="neon-lights"><h1>Treat Yo' Self!!</h1></div>
+            <div class="center-left" ><h3>Why choose any other place? We know what you like and how you like it! What's the worst that can happen? Diabetes?</h3></div>
+            <div class="diabetes-button"><button><p>Diabetes</p></button></div>
+         </div>
+
+         <!--Center Piece of Goodies-->
+         <div class="goodies-option">
+           
+        </div>
+        
+        <!--Bottom Piece of Goodies-->
+        <div class="bottom-piece">
+            <div class="text-left">
+                <h1>Our Motto</h1>
+                <p>We literally wake up to make these goodies before your significant other is even considering to get up to work out at the gym. Now tell us, who outworks who??</p>
+            </div>
+            <div class="img-right">
+                <div class="chef">
+                    <img src="./assets/tinywow_center-right-chef_4597972.jpg" alt="chef">
+                </div>
+            </div>
+            
+        </div>  
+     </div>
+    </section>     
+             
+    <div class="white-space">
+        <!--White Space-->
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-container">
+             <div class="left-contact">
+                <h2>Get In Contact!</h2>
+                <div class="contact-options">
+                <div class="socials">
+                    <div>
+                    <img src="./assets/icons_svg/phone.svg.svg" alt="phone">
+
+                    <h4>Phone</h4>
+                    </div>   
+                    <a href="##"><h5>555-555-5555</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/mail.svg.svg" alt="emails">
+                    <h4>Email</h4>
+                    </div>
+                    <a href="##"><h5>questions@tasytreats.com</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/map.svg.svg" alt="address">
+                    <h4>Address</h4>
+                    </div>
+                    <a href="##"><h5>555 Diabetes Ave<br>Reno, NV. <br> 55555</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/facebook.svg.svg" alt="facebook">
+                    <h4>Facebook</h4>
+                    </div>
+                    <a href="##"><h5>@Tasty Treates</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/twitter.svg.svg" alt="twitter">
+                    <h4>Twitter</h4>
+                    </div>
+                    <a href="##"><h5>@tasty_treats</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/instagram.svg.svg" alt="instagram">
+                    <h4>Instagram</h4>
+                    </div>
+                    <a href="##"><h5>@TastyTreats</h5></a>
+
+                    <div>
+                    <img src="./assets/icons_svg/youtube.svg.svg" alt="youtube">
+                    <h4>Youtube</h4>
+                    </div>
+                    <a href="##"><h5>Tasty Treats!!</h5></a>
+
+                </div>
+                <div class="hours">
+                    <h5>Store Hours</h5>
+                    <h6>Monday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Tuesday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Wednesday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Thursday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Friday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Saturday</h6>
+                    <h5>9:00 AM - 2:00 PM</h5>
+                    <h6>Sunday</h6>
+                    <h5>Closed</h5>
+                </div>
+                </div>
+
+            </div>
+            <div class="right-contact">
+                <div class="get-ahold">
+                    <h1>Try The Treats</h1>
+                    <h4>We can send you an email or text on the weekly treatly!</h4>
+                    <div class="form">
+                    <div>
+                        <h3>Name</h3>
+                        <input type="text" placeholder="Your Name Here">
+                    </div>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <input type="text" placeholder="Your Phone Number">
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <input type="email" placeholder="Your Email Here">
+                    </div>
+                    <div>
+                        <p>
+                            After submitting your contact information, you will instantly be recieving an email from us. Within the email you will be getting a 20% coupon for your next purchase. You will also get an option for getting notifactions from you phone or email. From then on, we will send you notifications for our weekly treats!!
+                        </p>
+                    </div>
+                    </div>
+                    <div class="contact-submit"><button>Submit</button></div>
+                    <div class="careers">
+                        <p>
+                            Looking for a <a href="##">career</a>? We work the for best people 'round here! Please fill out this form and check this off <input type="checkbox"> and we will in contact with you at our earliest convinience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <script src="./js/alphabet.js"></script>
+    <script src="./js/apiretrieval.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

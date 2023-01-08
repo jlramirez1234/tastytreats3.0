@@ -1,0 +1,231 @@
+/* About Page */
+.full-site-about{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .35s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+.about-container{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.about-container h3{
+    margin: 20px; 
+}
+.about-container i{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.about-container i:hover{
+    color: red;
+    cursor: pointer;
+}
+.is-visible{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+.about-body{
+    background: var(--bg-panel);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+[data-animation="zoomInOut"].full-site-about{
+    transform: scale(0.2);
+}
+[data-animation="zoomInOut"].full-site-about.is-visible{
+    transform: none;
+}
+
+.description{
+    width: 50%;
+    font-family:'Inconsolata', monospace;
+}
+.owner-pic{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Inconsolata', monospace;
+}
+.owner-pic img{
+    box-shadow: 5px 6px black;
+}
+.owner-pic img, .owner-pic p{
+    max-width: 50%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.owner-pic button{
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    background: var(--bg);
+    padding: 10px;
+    border-radius: 10px;
+    font-family:'Inconsolata', monospace;
+}
+
+/* Owner Page*/
+
+.full-site-owner{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .35s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+[data-animation="zoomInOut"].full-site-owner{
+    transform: scale(0.2);
+}
+[data-animation="zoomInOut"].full-site-owner.is-visible{
+    transform: none;
+}
+.is-visible{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+.pic-description{
+    display: flex;
+    height: 100%;
+    background: var(--bg-panel)
+}
+.owner-photo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.owner-photo img{
+    max-width: 75%;
+    box-shadow: 10px 7px black;
+}
+.owner-desc{
+    max-width: 95%
+}
+.owner-desc p{
+    margin: 0;
+    font-family:'Inconsolata', monospace;
+}
+.desc-sec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.desc-sec h1{
+    margin-top: 0;
+}
+.desc-sec div{
+    font-family: 'Pacifico', cursive;
+}
+
+/* Favorites Page */
+
+.full-site-favorites{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .35s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+.is-visible{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+.favorites-container h3{
+    margin: 20px;
+}
+.favorites-container i{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.favorites-container i:hover{
+    color: red;
+    cursor: pointer;
+}
+.favorites-card-container{
+    display: flex;
+    height: 100%;
+    background: var(--bg-panel);
+    flex-direction: column;
+    align-items: center;
+}
+.switch-container{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    height: 8%;
+    justify-content: center;
+    align-items: center
+}
+.alphabet-switch{
+    border: solid red 1px;
+    width: 15%;
+    height: 80%;
+    border-radius: 50px;
+    display: flex;
+
+}
+.switch-container #leftBtn{
+    color: blue;
+    border: solid 1px;
+    width: 50%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.switch-container #rightBtn{
+    color: orange;
+    border: solid 1px;
+    width: 50%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px
+}
+.switch-container #leftBtn:hover{
+    color: red;
+    border: solid 1px;
+    width: 50%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.switch-container #rightBtn:hover{
+    color: blue;
+    border: solid 1px;
+    width: 50%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px
+}
+.content-area{
+    display: flex;
+    flex-wrap: wrap;
+    border: black 1px solid;
+    height: 80%;
+    width: 90%;
+    justify-content: space-around;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+[data-animation="zoomInOut"].full-site-favorites{
+    transform: scale(0.2);
+}
+[data-animation="zoomInOut"].full-site-favorites.is-visible{
+    transform: none;
+}
