@@ -61,7 +61,6 @@ header .header-list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center
 }
 .white-space p{
     font-size: larger;

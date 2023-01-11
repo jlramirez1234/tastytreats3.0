@@ -8,7 +8,6 @@ async function callingDesserts() {
         .then((response) => response.data)
         .then((data) =>
           data.map((info) => {
-            info[`isHearted`] = false;
             return info;
           })
         )
