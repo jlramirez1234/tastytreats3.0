@@ -139,6 +139,19 @@ header .header-list{
 .diabetes-button button:hover{
     border: solid white 3px; 
 }
+.numberCount{
+    width: 100%;
+}
+.sweetness{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.sweetness h3{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+}
 .goodies-option, .content-area{
     margin-top: 30px;
     width: 1200px;
@@ -203,15 +216,13 @@ header .header-list{
     padding-left: 10px;
     padding-right: 10px;
 }
-.fa-heart.red{
-    color: red;
+.fa-heart {
     position: relative;
     top: 20px;
-}
-.fa-heart.blue{
     color: blue;
-    position: relative;
-    top: 20px;
+}
+.is-heart{
+    color: red;
 }
 .fa-regular:hover{
     cursor: pointer;
@@ -224,7 +235,6 @@ header .header-list{
 }
 .image-container img{
     width: 40%;
-    height: 190;
 }
 .goodies-detail {
     display: flex;
